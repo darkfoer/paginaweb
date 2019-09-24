@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ayuda</title>
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../css/stylecrearevento.css">
+    <style>
+            body {
+              background: #f5f5f5;
+            }
+            .container{
+              width: 1000%;
+              max-width: 90%;
+              margin: 50px auto;
+              background: #fff;
+              box-shadow: 0 2px 6px rgba(0,21,64,.1), 0 10px 20px rgba(0,21,64,.05);
+              border-radius: 5px;
+              padding: 1rem;
+            }
+            .tab-content {
+              margin-top: 25px;
+            }
+            </style>
+</head>
+
+<body>
+
+        <div class="container">
+            <nav>
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab"
+                        aria-controls="nav-home" aria-selected="true">AYUDA</a> <br>
+
+                </div>
+            </nav>
+            <!--PARTE DE DATOS-->
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                    <div class="row divevento">
+
+                        <div id="divmeddatg" class="col-4 bordecol" style="margin-right: 10px">
+                            <h1 class="h3 mb-0 text-gray-800">Preguntas Frecuentes</h1> <br>
+                            <div class="accordion" id="accordionExample">
+                                <div class="card">
+                                    <div class="card-header" id="headingOne">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link" type="button" data-toggle="collapse"
+                                                data-target="#collapseOne" aria-expanded="true"
+                                                aria-controls="collapseOne">
+                                                <select class="custom-select ">
+                                                    <option selected>¿ ?</option>
+                                                    <option value="1">Han aparecido más usuarios repentinamente en mi
+                                                        cuenta; ¿cómo
+                                                        puedo saber quién los ha añadido?</option>
+                                                    <option value="2">¿Hay un límite en el número de administradores o
+                                                        de
+                                                        usuarios que
+                                                        puedo añadir a la cuenta?</option>
+                                                    <option value="3">Me han quitado de mi cuenta, ¿qué puedo hacer?
+                                                    </option>
+                                                    <option value="4">¿Cómo puedo saber cuál es mi nivel de acceso?
+                                                    </option>
+                                                    <option value="5">Ya no puedo acceder a mi cuenta, ¿qué puedo hacer?
+                                                    </option>
+                                                    <option value="6">¿Qué puedo hacer si tengo cualquier otra duda o
+                                                        aclaración?
+                                                    <option value="7">¿Por qué no puedo agregar a este usuario?</option>
+                                                </select>
+                                            </button>
+                                        </h2>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row"><input type="text" id="datosg" class="form-control"
+                                    placeholder="ASUNTO DE">
+                            </div>
+                            <div class="row"><input type="text" id="datosg" class="form-control" placeholder="CORREO">
+                            </div> <br>
+                            <div class="row"><textarea name="descripcion" rows="10" cols="30"
+                                    placeholder="DESCRIPCION DEL ASUNTO" style="margin-top: 10px"></textarea>
+                            </div> <br>
+                            <div id="quejas">
+                                <center> <a href="#" class="btn btn-success">ENVIAR</a> </center>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+</body>
+
+</html>

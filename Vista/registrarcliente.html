@@ -1,0 +1,240 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../css/styleregistrarcliente.css">
+
+    <style>
+            body {
+              background: #f5f5f5;
+            }
+            .container{
+              width: 1000%;
+              max-width: 90%;
+              margin: 50px auto;
+              background: #fff;
+              box-shadow: 0 2px 6px rgba(0,21,64,.1), 0 10px 20px rgba(0,21,64,.05);
+              border-radius: 5px;
+              padding: 1rem;
+            }
+            .tab-content {
+              margin-top: 25px;
+            }
+            </style>
+</head>
+
+<body>
+    <!-- Page Heading -->
+        <div class="container">
+            <nav>
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab"
+                        aria-controls="nav-home" aria-selected="true">DATOS GENERALES</a>
+                    <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab"
+                        aria-controls="nav-profile" aria-selected="false">DATOS FISICOS</a>
+                    <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab"
+                        aria-controls="nav-contact" aria-selected="false">PAQUETE</a>
+                </div>
+            </nav>
+            <br>
+            <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                    <h1 class="h3 mb-0 text-gray-800">Registrar Nuevo Cliente</h1>
+                </div>
+            <!--PARTE DATOS GENERALES-->
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                    <div class="row">
+
+                        <div id="divmeddatg" class="col-4 bordecol" style="margin-right: 10px">
+
+
+                            <div class="row"><input type="text" id="datosg" class="form-control" placeholder="NOMBRE">
+                            </div>
+                            <div class="row"><input type="text" id="datosg" class="form-control" placeholder="APELLIDO">
+                            </div>
+                            <div class="row"><input type="number" id="datosg" class="form-control"
+                                    placeholder="DOCUMENTO (CC)">
+                            </div>
+                            <div class="row"><input type="text" id="datosg" class="form-control" placeholder="GENERO">
+                            </div>
+                            <div class="row"><input type="number" id="datosg" class="form-control"
+                                    placeholder="CELULAR">
+                            </div>
+                            <div class="row"><input type="email" id="datosg" class="form-control"
+                                    placeholder="CORREO ELECTRONICO"></div>
+                            <div class="row"><input type="text" id="datosg" class="form-control"
+                                    placeholder="DIRECCION">
+                            </div>
+
+                        </div>
+                        <div id="divdedatg" class="col-4" style="margin-left: 10px">
+
+                            <div class="row"><input type="text" id="datosg" class="form-control" placeholder="EPS">
+                            </div>
+                            <select class="custom-select ">
+                                    <option selected>RH</option>
+                                    <option value="1">O-</option>
+                                    <option value="2">O+</option>
+                                    <option value="3">B-</option>
+                                    <option value="3">B+</option>
+                                    <option value="3">A-</option>
+                                    <option value="3">A+</option>
+                                    <option value="3">AB-</option>
+                                    <option value="3">AB+</option>
+                                  </select>
+                            <div class="row"><input type="text" id="datosg" class="form-control"
+                                    placeholder="PROFESION">
+                            </div>
+                            <h7><center><strong>Fecha de nacimiento</strong></center></h7>
+                            <div class="row"><input type="date" id="datosg" class="form-control"
+                                    placeholder="FECHA NACIMIENTO"></div>
+                            <div class="row"><input type="text" id="datosg" class="form-control"
+                                    placeholder="NOMBRE Y PAELLIDOS FAMILIAR"></div>
+                            <div class="row"><input type="number" id="datosg" class="form-control"
+                                    placeholder="CELULAR FAMILIAR"></div>
+                            <div class="row"><input type="text" id="datosg" class="form-control"
+                                    placeholder="PARENTESCO">
+                            </div>
+
+                        </div>
+                        <div class="col-3 " style="margin-right: 20px">
+                            <div class="card" style="width: auto;">
+                                <div class="container">
+                                    <div class="picture-container">
+                                        <div class="picture">
+                                            <img src="https://lh3.googleusercontent.com/LfmMVU71g-HKXTCP_QWlDOemmWg4Dn1rJjxeEsZKMNaQprgunDTtEuzmcwUBgupKQVTuP0vczT9bH32ywaF7h68mF-osUSBAeM6MxyhvJhG6HKZMTYjgEv3WkWCfLB7czfODidNQPdja99HMb4qhCY1uFS8X0OQOVGeuhdHy8ln7eyr-6MnkCcy64wl6S_S6ep9j7aJIIopZ9wxk7Iqm-gFjmBtg6KJVkBD0IA6BnS-XlIVpbqL5LYi62elCrbDgiaD6Oe8uluucbYeL1i9kgr4c1b_NBSNe6zFwj7vrju4Zdbax-GPHmiuirf2h86eKdRl7A5h8PXGrCDNIYMID-J7_KuHKqaM-I7W5yI00QDpG9x5q5xOQMgCy1bbu3St1paqt9KHrvNS_SCx-QJgBTOIWW6T0DHVlvV_9YF5UZpN7aV5a79xvN1Gdrc7spvSs82v6gta8AJHCgzNSWQw5QUR8EN_-cTPF6S-vifLa2KtRdRAV7q-CQvhMrbBCaEYY73bQcPZFd9XE7HIbHXwXYA=s200-no"
+                                                class="picture-src" id="wizardPicturePreview" title="">
+                                            <input type="file" id="wizard-picture" class="">
+                                        </div>
+                                        <h6 class=""><strong>Elegir Foto</strong> </h6>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--PARTE DATOS FISICOS-->
+                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+
+                    <div class="row">
+
+                        <div id="divmeddafs" class="col-4 bordecol" style="margin-right: 10px">
+
+
+                            <div class="row"><input type="number" id="datosg" class="form-control" placeholder="EDAD">
+                            </div>
+                            <div class="row"><input type="number" id="datosg" class="form-control" placeholder="ALTURA">
+                            </div>
+                            <div class="row"><input type="number" id="datosg" class="form-control" placeholder="PESO">
+                            </div>
+                            <div class="row"><input type="number" id="datosg" class="form-control" placeholder="%GRASO">
+                            </div>
+                            <div class="row"><input type="number" id="datosg" class="form-control"
+                                    placeholder="IMC (Indice de Masa Corporal)">
+                            </div>
+                            <div class="row"><textarea name="observaciones" rows="10" cols="30"
+                                    placeholder="OBSERVACIONES"></textarea></div>
+                        </div>
+                        <div id="divdedafs" class="col-4" style="margin-left: 10px">
+
+                            <div class="row"><textarea name="diagnostico" rows="10" cols="30" placeholder="DIAGNOSTICO"
+                                    style="margin-top: 10px"></textarea></div>
+                            <div class="row"><textarea name="objetivos" rows="10" cols="30" placeholder="OBJETIVOS"
+                                    style="margin-top: 10px"></textarea>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+
+                    <div class="row divpaquetes">
+
+                        <div id="divmeddafs" class="center-block" style="margin-right: 10px">
+
+                            <center>
+                                <h7><strong>Fecha de inicio</strong></h7>
+                            </center>
+                            <div class="row"><input type="date" id="datosg" class="form-control"
+                                    placeholder="FECHA INICIO">
+                            </div>
+                            <center>
+                                <h7><strong>Fecha finalizacion</strong></h7>
+                            </center>
+                            <div class="row"><input type="date" id="datosg" class="form-control"
+                                    placeholder="FECHA FINAL" disabled>
+                            </div>
+                            <select class="custom-select ">
+                                <option selected>Seleccionar Paquete</option>
+                                <option value="1">Paquete 1</option>
+                                <option value="2">Paquete 2</option>
+                                <option value="3">PAquete 3</option>
+                            </select>
+                            <div class="row"><textarea name="descripcionp" rows="10" cols="30"
+                                    placeholder="DISCRIPCION PAQUETE" style="margin-top: 10px" disabled></textarea>
+                            </div>
+                            <div class="row"><input type="number" id="datosg" class="form-control"
+                                    placeholder="TOTAL A PAGAR" disabled>
+                            </div>
+                            <div class="row"><input type="number" id="datosg" class="form-control"
+                                    placeholder="CANCELA">
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="contenedorbotones">
+                <a href="#" id="cancelar" class="btn btn-danger btn-circle">
+                    <i style='font-size:24px' class='fas'>&#xf00d;</i>
+        
+                    </i>
+                </a>
+                <a href="#" id="aceptar" class="btn btn-success btn-circle ">
+                    <i style='font-size:24px' class='far'>&#xf0c7;</i>
+        
+                    </i>
+                </a>
+            </div>
+    </div>
+
+
+
+    <!--para generar reportes-->
+    <!--<a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>-->
+
+    <!--Para cargar la imagen-->
+    
+    <script src="../js/fotoregistrocliente.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+body {
+  
+    /*background-size: 100px;
+    background-size: 100%; */
+	/*background-image: url("../img/gyminicio.jpg");*/
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5),rgba(27, 170, 218, 0.651)), url("../img/gyminicio.jpg");
+    background-position: center center;
+    background-size: cover;
+}   
+
+.contain{
+    background: rgba(0,0,0,0.9);
+    width:400px;
+    max-width: 90%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid rgb(27, 170, 218);
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    
+}
+
+input[type=text], input[type=password] {
+    
+    border-radius: 6px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background: transparent;
+    border: 2px solid rgb(27, 170, 218);
+    color: white;
+    padding: 5px;
+    box-shadow: none;
+            
+}
+
+input:hover{
+    transition: all 0.3s ease-in-out;
+    border-left: 5px solid rgb(27, 170, 218);
+    border-radius: 0px;
+  }
+  input::placeholder {
+    color: rgb(145, 140, 140);
+  }
+
+  button {
+    background-color: transparent;
+    color: white;
+    padding: 14px 20px;
+    border: 2px solid rgb(27, 170, 218);
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+  }
+  button:hover {
+    background-color: rgb(27, 170, 218);
+    color:  rgba(0, 0, 0, 1);
+    transition: all 0.3s ease-in-out;
+  }
+
+  

@@ -1,0 +1,121 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="../css/stylecrearevento.css">
+    <style>
+        body {
+            background: #f5f5f5;
+        }
+
+        .container {
+            width: 1000%;
+            max-width: 90%;
+            margin: 50px auto;
+            background: #fff;
+            box-shadow: 0 2px 6px rgba(0, 21, 64, .1), 0 10px 20px rgba(0, 21, 64, .05);
+            border-radius: 5px;
+            padding: 1rem;
+        }
+
+        .tab-content {
+            margin-top: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Page Heading -->
+
+    <div class="container">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item">
+                      <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">CREAR EVENTO</a>
+                    </li>
+                  </ul>
+        <!--PARTE DATOS GENERALES-->
+        <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                <div class="row divevento">
+
+                    <div id="divmeddatg" class="col-4 bordecol" style="margin-right: 10px">
+
+
+                        <div class="row"><input type="text" id="datosg" class="form-control"
+                                placeholder="NOMBRE EVENTO">
+                        </div>
+                        <div class="row"><input type="number" id="datosg" class="form-control"
+                                placeholder="COSTO DEL EVENTO">
+                        </div>
+                        <div class="row"><input type="text" id="datosg" class="form-control" placeholder="LUGAR">
+                        </div>
+                        <div class="row"><input type="text" id="datosg" class="form-control" placeholder="DIRECCION">
+                        </div>
+                        <h7>
+                            <center><strong>FECHA</strong></center>
+                        </h7>
+                        <div class="row"><input type="date" id="datosg" class="form-control" placeholder="FECHA">
+                        </div>
+                        <h7>
+                            <center><strong>HORA</strong></center>
+                        </h7>
+                        <div class="row"><input type="time" id="datosg" class="form-control" placeholder="HORA"></div>
+                        <div class="row"><input type="text" id="datosg" class="form-control" placeholder="DIRIGIDO POR">
+                        </div>
+                        <div class="row"><textarea name="descripcion" rows="10" cols="30" placeholder="DESCRIPCION"
+                                style="margin-top: 10px"></textarea></div>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+        <div id="contenedorbotones">
+            <a href="#" id="cancelar" class="btn btn-danger btn-circle">
+                <i style='font-size:24px' class='fas'>&#xf00d;</i>
+
+                </i>
+            </a>
+            <a href="#" id="aceptar" class="btn btn-success btn-circle ">
+                <i style='font-size:24px' class='far'>&#xf0c7;</i>
+
+                </i>
+            </a>
+        </div>
+    </div>
+
+
+
+
+    <!--para generar reportes-->
+    <!--<a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>-->
+
+    <!--Para cargar la imagen-->
+
+
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>document.getElementsByTagName("html")[0].className += " js";</script>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Responsive Sidebar Navigation | CodyHouse</title>
+</head>
+
+<body>
+  <header class="cd-main-header js-cd-main-header">
+    <div class="cd-logo-wrapper">
+      <a href="#0" class="cd-logo"><img src="assets/img/cd-logo.svg" alt="Logo"></a>
+    </div>
+
+    <div class="cd-search js-cd-search" style="visibility: hidden;">
+      <form>
+        <input class="reset" type="search" placeholder="Search...">
+      </form>
+    </div>
+
+    <button class="reset cd-nav-trigger js-cd-nav-trigger" aria-label="Toggle menu"><span></span></button>
+
+    <ul class="cd-nav__list js-cd-nav__list">
+      <li class="cd-nav__item"><a href="#0">Contacto</a></li>
+      <li class="cd-nav__item"><a href="#0">Ayuda</a></li>
+      <li class="cd-nav__item cd-nav__item--has-children cd-nav__item--account js-cd-item--has-children">
+        <a href="#0">
+          <img src="assets/img/cd-avatar.svg" alt="avatar">
+          <span>@Admin</span>
+        </a>
+
+        <ul class="cd-nav__sub-list">
+          <li class="cd-nav__sub-item"><a href="#0" onclick="cargarpagina('perfil')">Mi cuenta</a></li>
+          <li class="cd-nav__sub-item"><a href="#0" onclick="cargarpagina('ajustes')">Editar cuenta</a></li>
+          <li class="cd-nav__sub-item"><a href="#0" onclick="cerrarcuenta()">Salir</a></li>
+        </ul>
+      </li>
+    </ul>
+  </header> <!-- .cd-main-header -->
+
+  <main class="cd-main-content">
+    <nav class="cd-side-nav js-cd-side-nav">
+      <ul class="cd-side__list js-cd-side__list">
+        <li class="cd-side__label"><span>Main</span></li>
+        <li class="cd-side__item cd-side__item--has-children cd-side__item--overview js-cd-item--has-children">
+          <a href="./paneladmin.html">Inicio</a>
+        </li>
+
+        <li class="cd-side__item cd-side__item--has-children cd-side__item--notifications js-cd-item--has-children">
+          <a href="#0">Eventos<span class="cd-count">0</span></a>
+
+          <ul class="cd-side__sub-list">
+            <li class="cd-side__sub-item"><a href="#0" onclick="cargarpagina('crearevento')">Crear Eventos</a></li>
+            <li class="cd-side__sub-item"><a href="#0" onclick="cargarpagina('gestionareventos')">Gestionar Eventos</a></li>
+          </ul>
+        </li>
+        <li class="cd-side__item cd-side__item--has-children cd-side__item--users js-cd-item--has-children">
+          <a href="#0">Clientes</a>
+
+          <ul class="cd-side__sub-list">
+            <li class="cd-side__sub-item"><a href="#0" onclick="cargarpagina('registrarcliente')">Registrar</a></li>
+            <li class="cd-side__sub-item"><a href="#0" onclick="cargarpagina('gestionarclientes')">Gestionar</a></li>
+          </ul>
+        </li>
+        <li class="cd-side__item cd-side__item--has-children cd-side__item--comments js-cd-item--has-children">
+          <a href="#0" onclick="cargarpagina('registrarpago')">Registrar pagos</a>
+        </li>
+      </ul>
+
+      <ul class="cd-side__list js-cd-side__list">
+        <li class="cd-side__label"><span>Secundario</span></li>
+        <li class="cd-side__item cd-side__item--has-children cd-side__item--bookmarks js-cd-item--has-children">
+          <a href="#0" onclick="cargarpagina('ayuda')">Ayuda</a>
+        </li>
+
+        <li class="cd-side__item cd-side__item--has-children cd-side__item--images js-cd-item--has-children">
+          <a href="#0" onclick="cargarpagina('ajustes')">Ajustes</a>
+
+          <ul class="cd-side__sub-list">
+            <li class="cd-side__sub-item"><a href="#0" onclick="cargarpagina('ajustes')">Cambiar Contraseña</a></li>
+            <li class="cd-side__sub-item"><a href="#0" onclick="cargarpagina('perfil')">Ver perfil</a></li>
+          </ul>
+        </li>
+
+      </ul>
+
+      <ul class="cd-side__list js-cd-side__list">
+        <li class="cd-side__label"><span>Acciones</span></li>
+        <li class="cd-side__btn"><button class="reset" href="#0">Cerrar cuenta</button></li>
+      </ul>
+    </nav>
+
+    <div class="cd-content-wrapper">
+      <div class="text-component text-center">
+        <iframe name="iFrameName" src="./Vista/inicioadmin.html"
+          style="width: 100%;height:100vh;"></iframe>
+      </div>
+    </div> <!-- .content-wrapper -->
+  </main> <!-- .cd-main-content -->
+  <script src="assets/js/util.js"></script> <!-- util functions included in the CodyHouse framework -->
+  <script src="assets/js/menu-aim.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    var inicioruta = "./Vista/";
+    var finalruta = ".html";
+    function cargarpagina(nomarchivo) {      
+      var site = inicioruta + nomarchivo + finalruta;
+      document.getElementsByName('iFrameName')[0].src = site;
+    }
+    function cerrarcuenta() {      
+      window.location = "./index.html";
+    }
+  </script>
+</body>
+
+</html>
